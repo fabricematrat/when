@@ -1,12 +1,12 @@
 language: node_js
 node_js:
   - '0.10'
-  - '0.8'
-script: npm test
+script: npm run ci
 branches:
   only:
     - dev
     - master
+    - simplify-browser-testing
 env:
   global:
     - SAUCE_USERNAME="cujojs-when"
